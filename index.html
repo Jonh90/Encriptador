@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+        <title>Desafio Encriptador</title> 
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="titulo">
+                <img src="Imagenes/Logo.png" class="logo" alt="Logo de pagina Desafio Encriptador de texto de Alura">
+                <h1 class="tema">Desafio Encriptador</h1>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="contenedor">
+                <textarea class="encriptar" cols="30" rows="10" placeholder="Ingrese el Texto aqui"></textarea>
+                
+                <div class="terminos">
+                    <img src="Imagenes/danger.png" alt="Imagen con icono de alerta" class="img-alerta">
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="botones">
+                    <input class="btn-encriptar" type="button" value="Encriptar" onclick="btnEncriptar()"></input>
+                    <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="btnDesencriptar()"></input>
+                </div>
+            </section>
+
+            <section class="tarjeta">  
+                <div class="contenedor-imagen">
+                    <img src="Imagenes/Muñeco.svg" alt="Imagen si no encuentra texto">
+                </div>
+
+                <div class="contenedor-parrafo">
+                    <h3>Ningun mensaje fue<br> encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o<br> desencriptar</p>
+                </div>
+
+                <div class="contenedor-copiar">
+                    <input type="button" class="btn-copiar" value="Copiar">
+                </div>
+
+                <div class="contenedor-resultado">
+                    <p class="texto-resultado"></p>
+                </div>
+            </section>
+
+        </main>
+    
+        <footer>
+            <img src="imagenes/Logo-Footer.png" alt="Logo de Encriptador Alura y Oracle">
+            <p class="copyright">&copy Copyright 2024 - MQ Corporation </p>
+
+            <a href="https://www.linkedin.com/in/jonathan-martinez-rfa/" rel="">
+                <img src="Imagenes/linkedin.png" alt="Logo de Linkedin" class="linked">
+            </a>
+
+            <a href="https://github.com/Jonh90" rel="">
+                <img src="Imagenes/github.png" alt="Logo de Github" class="github">
+            </a>
+        </footer>
+    </body>
+
+    <script src="script.js"></script>
+
+</html>

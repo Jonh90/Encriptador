@@ -1,0 +1,245 @@
+/*Codigo para el cuerpo general de la pagina*/
+
+body{
+    background: url(imagenes/fondo2.avif);
+    font-family: "Protest Riot", sans-serif;
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+/*Encabezado de la pagina*/
+header{
+    position: absolute;
+    margin: 40px 0 0 40px;
+}
+
+header .logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo{
+    width: 130px; 
+    float: left;
+    margin: 0 20px 20px 70px;
+    padding-top: 20px;
+}
+
+.titulo{
+    width: 940px ;
+    position: relative;
+    margin: 40px auto;
+
+}
+
+.tema{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding-top: 85px;
+}
+
+/*cuerpo de la pagina*/
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor{
+    width: 60%;
+    margin: 168px 0 0 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 540px;
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    font-family: "Protest Riot", sans-serif;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 15px;
+    resize: none;
+}
+
+.encriptar::placeholder,:focus{
+    color: darkblue;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.img-alerta{
+    width: 35px;
+    float: left;
+    margin: 10px 10px 20px 0;
+    }
+
+.terminos{
+    color: #495057;
+    display: flex;
+    align-items: center;
+    line-height: 150%;
+}
+
+.botones{
+    position: absolute;
+    height: 80px;
+    padding-top: 15px;
+}
+
+.btn-encriptar{
+    width: 258px;
+    height: 57px;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background: rgb(2, 2, 163);
+}
+
+.btn-desencriptar{
+    width: 258px;
+    height: 57px;
+    border-radius: 24px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover{
+    background: #d8dfe8d4;
+}
+
+.tarjeta{
+    display: block;
+    margin-top: 70px;
+    position: relative;
+    width: 400px;
+    height: 740px;
+    padding-right: 20px;
+    background-color: #e5e5e5;
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
+
+.contenedor-imagen{
+    position: absolute;
+    width: 30%;
+    margin: 20px;
+    margin-top: 30%;
+    background: #e5e5e5;
+    box-sizing: border-box;
+}
+
+.contenedor-parrafo{
+    position: absolute;
+    box-sizing: border-box;
+    top: 570px;
+    left: 40px;
+}
+
+.contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-parrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
+
+.contenedor-resultado p{
+    color: #495057;
+    font-size: 25px;
+}
+
+.img-imagen{
+    
+    background: #e5e5e5;
+}
+
+.contenedor-copiar{
+    display: flex;
+    position: absolute;
+    bottom: 400px;
+    top: 700px;
+    background-color: aqua;
+    padding-left: 40px;
+}
+
+.btn-copiar{
+    width: 258px;
+    height: 57px;
+    margin-top: 16px;
+    margin-left: 40px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    right: 4px;
+}
+
+.btn-copiar:hover{
+    background: #ffffffdf;
+}
+
+.ocultar{
+    display: none;
+}
+
+.texto-resultado{
+    margin-top: 30px;
+    margin: 20px;
+}
+
+/*Codigo para el pie de la pagina*/
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .contenedor {
+        width: 100%; /* O cualquier otro valor adecuado para pantallas más pequeñas */
+    }
+}
